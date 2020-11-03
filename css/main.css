@@ -4,7 +4,7 @@
 @content:耀保险
 ***/
 body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, form, fieldset, input, label,textarea{margin:0;padding:0;}
-body{font-family:"Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;-webkit-text-size-adjust:none;font-size:14px;color:#374567;background: #fff;}
+body{font-family:"Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;-webkit-text-size-adjust:none;font-size:14px;color:#374567;background: #F9FAFF;}
 html,body {-webkit-user-select:none;user-select:none;outline:0;}
 a{text-decoration:none;outline:none;color:#374567;}
 input,textarea{outline:none;}
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
     width: 384px;
     padding-top: 14px;
 }
-.travel-list{
+.travel-list,.sport-list{
     width: 460px;
 }
 .jjfaWrap-list li{
@@ -245,6 +245,9 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
     padding-left: 12px;
     box-sizing: border-box;
     margin-top: 14px;
+}
+.sport-list li{
+    width: 33%;
 }
 .jjfaWrap-list li:before{
     position: absolute;
@@ -691,6 +694,7 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
     margin: 66px auto 0;
 }
 .register-intro{
+    position: relative;
     margin-top: 10px;
 }
 .res-lable{
@@ -723,7 +727,7 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
     font-size: 14px;
 }
 .next-btn{
-    margin:38px 0 0 93px;
+    margin:38px 0 0 94px;
     width: 90px;
     height: 50px;
     line-height: 50px;
@@ -738,3 +742,100 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
 .register-main .loginRes-list{
     margin-top: 40px;
 }
+.res-input1{
+    width: 274px;
+}
+.register-intro .txmm{
+    right:64px;
+    top: 8px;
+}
+.register-intro .txmm-change{
+    right:4px;
+}
+.register-intro .loginMsg-btn,.register-intro .loginMsg-second{
+    right:12px;
+}
+.register-intro .eye-icon{
+    right:10px;
+}
+.register-2 .login-rules{
+    padding:8px 0 0 94px;
+}
+.register-act{
+    padding:35px 0 0 94px;
+}
+.register-act span{
+    display: inline-block;
+    cursor: pointer;
+}
+.resAct-prev{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #DCE1E6;
+    border-radius: 2px;
+    color: #93A0B9;
+    font-size: 16px;
+}
+.res-enter{
+    width: 90px;
+    height: 50px;
+    background: #2594EF;
+    box-shadow: 0px 3px 6px rgba(37, 148, 239, 0.15);
+    border-radius: 2px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-left: 10px;
+}
+.register-ok{
+    width: 560px;
+    margin:40px auto 0;
+}
+.resOk-top{
+    text-align: center;
+}
+.sucess-icon{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background: url(../images/icon_success.png) no-repeat 0 0;
+}
+.resOk-txt{
+    font-size: 24px;
+    margin-top: 12px;
+}
+.resOk-box{
+    margin-top: 20px;
+    width: 560px;
+    height: 200px;
+    background: rgba(147, 160, 185, 0.1);
+    border-radius: 2px;
+}
+.resOk-list{
+    padding:22px 0 0 88px;
+}
+.resOk-list li{
+    margin-top: 10px;
+}
+.resOk-list li span{
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+}
+.resOk-btn{
+    margin:25px auto 0;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    background: #2594EF;
+    box-shadow: 0px 3px 6px rgba(37, 148, 239, 0.15);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
