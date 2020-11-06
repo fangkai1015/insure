@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
     margin-top: 14px;
 }
 .header-menu li{
+    position: relative;
     float: left;
     height: 32px;
     line-height: 32px;
@@ -60,6 +61,37 @@ h1, h2, h3, h4, h5, h6{font-weight: normal;}
 }
 .header-menu li.active a{
     color: #2594EF;
+}
+.subnav-box{
+    position: absolute;
+    top: 44px;
+    left: -62px;
+    background: #FFF;
+    box-shadow: 0 3px 11px 0 rgba(0,0,0,.14);
+    z-index: 11;
+    padding: 0 10px 10px 0;
+    width: 256px;
+}
+.subnav-box span{
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #F5F8F9;
+    margin-top: 10px;
+    float: left;
+    margin-left: 15px
+}
+.subnav-box span a{
+    display: block;
+}
+.more-arrow{
+    position: absolute;
+    width: 48px;
+    height: 19px;
+    background: url(../images/more_top.png) no-repeat;
+    top: -19px;
+    left: 65px;
 }
 .header-user{
     float: right;
@@ -1102,12 +1134,25 @@ box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.1);
 
 }
 .insureNav-list li a{
+    position: relative;
     padding-left: 38px;
     display: block;
     color: rgba(55, 69, 103, 0.8);
 }
+.insureNav-list li a.current{
+    background:#f3f8fd;
+}
 .insureNav-list li a:hover{
-    background: #E6F7FF;
+    background: #f3f8fd;
+}
+.insureNav-list li a.current:after{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 2px;
+    height: 40px;
+    background: #1890FF;
+    content: '';
 }
 .insure-tb{
     float: right;
@@ -1163,6 +1208,7 @@ box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.1);
     margin-left: 5px;
 }
 .tbxx-submit{
+    position: relative;
     padding:16px 30px 0;
 }
 .tbxx-model{
@@ -1281,4 +1327,258 @@ box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.1);
     border-radius: 4px;
     color:#fff;
     font-size: 16px;
+}
+.insureNav-order{
+    background: url(../images/order-icon.png) no-repeat 16px center;
+}
+.insureOrder{
+    margin:0;
+}
+.order-select{
+    border-radius: 0;
+    width: 116px;
+    height: 34px;
+    float: left
+}
+.order-input{
+    width: 233px;
+    border-radius: 0;
+    margin-left: -1px;
+    float: left;
+}
+.order-label{
+    float: left;
+}
+.order-submit .tbxx-model{
+    width: 45%;
+}
+.orderBtn{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    width: 76px;
+    height: 32px;
+    background: #2594EF;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    color:#fff;
+    cursor: pointer;
+}
+.orderMenu{
+    display: inline-block;
+}
+.orderMenu a{
+    display: inline-block;
+    margin-right: 30px;
+    line-height: 51px;
+}
+.orderMenu a.current{
+    font-size: 16px;
+    color: #2594EF;
+    border-bottom: 2px solid #2594EF;
+}
+.yj-table table td.order-tdTip{
+    height: 40px;
+    background: #F5FCFF;
+    color: #93A0B9;
+}
+.order-tdTip span{
+    margin-left: 15px;
+}
+.order-action{
+    position: relative;
+}
+.order-action a{
+    display: inline-block;
+    color: #2594EF;
+}
+.orderPay{
+    margin:0 8px;
+    padding:0 8px;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+}
+.orderMore-act{
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    width: 52px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.2);
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 22px;
+}
+.orderMore-act a{
+    display: block;
+    line-height: 37px;
+}
+.orderMore-act a:hover{
+    background: rgba(60, 62, 67, 0.05);
+}
+.orderClo{
+    padding:20px 0 0 30px;
+}
+.orderClo span{
+    margin-right: 15px;
+}
+.orderMore{
+    padding-right: 14px;
+    background: url(../images/btn_gengduo.png) no-repeat right center;
+}
+.orderPay-act{
+    padding:20px 30px 0 30px;
+}
+.orderPay-all{
+    float: left;
+}
+.orderPay-re{
+    float: right;
+}
+.orderPay-money{
+    color: #2594EF;
+    font-size: 24px;
+}
+.orderPay-btn{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #2594EF;
+    box-shadow: 0px 3px 6px rgba(37, 148, 239, 0.15);
+    border-radius: 2px;
+    font-size: 16px;
+    color:#fff;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.orderCus{
+    background: url(../images/icon_ddgl.png) no-repeat 12px center;
+}
+.customSer{
+    background: url(../images/icon_khfw.png) no-repeat 12px center;
+}
+.userBox{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.1);
+    opacity: 1;
+    padding-bottom: 30px;
+}
+.orderCus-btn{
+    color:#2594EF;
+}
+.userSet-box{
+    margin-bottom: 16px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(60, 62, 67, 0.1);
+}
+.userSet-intro{
+    float: left;
+    line-height: 24px;
+}
+.ok-icon{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(../images/ok_icon.png) no-repeat 0 0;
+}
+.userSet-name{
+    margin-left: 10px;
+    vertical-align: middle;    
+}
+.userSet-status{
+    margin-left: 48px;
+    vertical-align: middle;    
+}
+.userSet-action{
+    float: right;
+    color:#2594EF;
+}
+.account-menu li{
+    height: 58px;
+    line-height: 58px;
+    border-bottom:1px solid rgba(147, 160, 185, .3);
+}
+.account-menu li a{
+    position: relative;
+    display: block;
+    padding-left: 48px;
+}
+.ztxx{
+    background: url(../images/user_intro.png) no-repeat 20px center;
+}
+.zhsz{
+    background: url(../images/user_zh.png) no-repeat 20px center;
+}
+.qxsz{
+    background: url(../images/user_qx.png) no-repeat 20px center;
+}
+.account-menu li a.current{
+    background-color:#f3f8fd;
+}
+.account-menu li a:hover{
+    background-color: #f3f8fd;
+}
+.account-menu li a.current:after{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 2px;
+    height: 58px;
+    background: #1890FF;
+    content: '';
+}
+.zh-status{
+    padding:30px 30px 0;
+}
+.rz-icon{
+    float: left;
+    width: 76px;
+    height: 76px;
+    background: url(../images/rz_icon.png) no-repeat center center rgba(37, 148, 239, .1);
+    border-radius: 50%;
+}
+.rz-intro{
+    float: left;
+    padding:10px 0 0 25px;
+}
+.rz-name{
+    font-size: 16px;
+    color:#999;
+}
+.rz-tips{
+    margin-top: 15px;
+}
+.ok-txt{
+    color: #2594EF;
+    margin-left: 5px;
+}
+.ztxx-item{
+    padding:10px 30px 0;
+}
+.ztxx-item li{
+    line-height: 30px;
+    margin-top: 6px;
+}
+.ztxx-label{
+    display: inline-block;
+    width: 136px;
+}
+.zhsz-box,.qxsz-box{
+    min-height: 500px;
+}
+.qxsz-con{
+    padding:30px 30px 0;
+}
+.qxsz-name{
+    font-size: 16px;
+}
+.qxsz-tips{
+    line-height: 24px;
+    color:#999;
+    padding-top: 15px;
 }
